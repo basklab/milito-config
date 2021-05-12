@@ -6,11 +6,11 @@ leaders:
 
   - unit_type: "Leader_1"
     combat_value: 2
-    place_unit_ability: 2
+    place_unit_ability: 3
 
   - unit_type: "Leader_2"
     combat_value: 2
-    place_unit_ability: 1
+    place_unit_ability: 2
     special_effect: "if win combat"
 
   - unit_type: "Leader_3"
@@ -38,10 +38,35 @@ leaders:
     place_unit_ability: 1
 
 units:
-  - unit_type: "Warband_Med_Inf"
+  - unit_type: "Pikes"
+    attack_strength: 5
+    defence_strength: 5
+    deploy_penalty: 2
+    flank_penalty: 1
     speed: 2
+
+  - unit_type: "Spears"
+    attack_strength: 4
+    defence_strength: 5
+    deploy_penalty: 1
+    flank_penalty: 1
+    speed: 2
+
+  - unit_type: "Light_Infantry"
+    speed: 3
+    attack_strength: 1
+    defence_strength: 1
+    combine_ability: true
+
+  - unit_type: "Companions"
+    speed: 3
     attack_strength: 4
     defence_strength: 2
+
+  - unit_type: "Heavy_Cavalry"
+    speed: 5
+    attack_strength: 1
+    defence_strength: 1
 
   - unit_type: "Slingers"
     speed: 3
@@ -49,18 +74,16 @@ units:
     defence_strength: 1
     combine_ability: true
 
-  - unit_type: "Chariots"
-    speed: 3
-    attack_strength: 4
-    defence_strength: 2
-
   - unit_type: "Light_Cavalry"
     speed: 5
     attack_strength: 1
     defence_strength: 1
 
 counts:
-  Warband_Med_Inf: 6
-  Slingers: 6
-  Chariots: 6
-  Light_Cavalry: 4
+  Pikes: 7
+  Spears: 4
+  Light_Infantry: 3
+  Slingers: 2
+  Companions: 2
+  Heavy_Cavalry: 2
+  Light_Cavalry: 2
